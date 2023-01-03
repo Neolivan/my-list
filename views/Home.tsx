@@ -37,6 +37,9 @@ export function HomeScreen() {
                 selectedListSet(item.id);
                 navigation.navigate("Selected");
               }}
+              onLongPress = {() => {
+                console.log("Long Press")
+              }}
             >
               <Text style={styles.itemText}>{item.name}</Text>
             </TouchableOpacity>
